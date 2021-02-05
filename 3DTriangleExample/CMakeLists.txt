@@ -21,7 +21,7 @@ set(GLFW_LINK /usr/local/Cellar/glfw/3.3.2/lib/libglfw.3.dylib)
 find_package(Qt${QT_VERSION} COMPONENTS ${REQUIRED_LIBS} REQUIRED)
 link_libraries(${OPENGL} ${GLEW_LINK} ${GLFW_LINK})
 
-add_executable(ForkGL main.cpp Base/GLWindow.cpp Base/GLWindow.hpp TriangleWindow.hpp TriangleWindow.cpp Shaders/triangle.fs Shaders/triangle.vs shaders.qrc)
+add_executable(ForkGL main.cpp Base/GLWindow.cpp Base/GLWindow.hpp TriangleWindow.hpp TriangleWindow.cpp shaders.qrc)
 
 target_link_libraries(ForkGL "-framework OpenGL")
 target_link_libraries(ForkGL "-framework GLUT")
